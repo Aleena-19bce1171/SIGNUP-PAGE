@@ -13,7 +13,7 @@
         <div class="form-container sign-up-container">
             <form action="#">
                 <h1>Get Started Here</h1>
-                <div class="social-container">
+                <div class="social-login-container">
                     <a href="#" class="social"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="social"><i class="fa fa-google-plus"></i></a>
                     <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
@@ -22,13 +22,17 @@
                 <input type="text" placeholder="Name" />
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
+                <div class="check">
+                    <li><input type="checkbox" id="checkid2"></li>
+                    <li><p id="checktext">Terms and Conditions</p></li>
+            </div>
                 <button>Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
             <form action="#">
                 <h1>Sign in</h1>
-                <div class="social-container">
+                <div class="social-login-container">
                     <a href="#" class="social"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="social"><i class="fa fa-google-plus"></i></a>
                     <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
@@ -40,22 +44,21 @@
                 <button>Sign In</button>
             </form>
         </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
+        <div class="transition-container">
+            <div class="transition">
+                <div class="transition-panel transition-left">
                     <h1>Welcome Back!</h1>
                     <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn">Sign In</button>
+                    <button class="transition-button" id="signIn">Sign In</button>
                 </div>
-                <div class="overlay-panel overlay-right">
+                <div class="transition-panel transition-right">
                     <h1>Hello, There!</h1>
                     <p>Enter your personal details and start journey with us</p>
-                    <button class="ghost" id="signUp">Sign Up</button>
+                    <button class="transition-button" id="signUp">Sign Up</button>
                 </div>
             </div>
         </div>
-    </div>
-    
+    </div>  
 <script src="script.js"></script>
 </body>
 </html>
