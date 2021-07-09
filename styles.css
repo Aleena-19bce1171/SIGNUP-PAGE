@@ -65,7 +65,7 @@ button:focus {
 	outline: none;
 }
 
-button.ghost {
+button.transition-button {
 	background-color: transparent;
 	border-color: #FFFFFF;
 }
@@ -144,7 +144,7 @@ input {
 	}
 }
 
-.overlay-container {
+.transition-container {
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -155,17 +155,14 @@ input {
 	z-index: 100;
 }
 
-.container.right-panel-active .overlay-container{
+.container.right-panel-active .transition-container{
 	transform: translateX(-100%);
 }
 
-.overlay {
+.transition {
 	background: #1D976C;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #18a18d, #097969);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #18a18d, #097969); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -178,11 +175,11 @@ background: linear-gradient(to right, #18a18d, #097969); /* W3C, IE 10+/ Edge, F
 	transition: transform 0.6s ease-in-out;
 }
 
-.container.right-panel-active .overlay {
+.container.right-panel-active .transition {
   	transform: translateX(50%);
 }
 
-.overlay-panel {
+.transition-panel {
 	position: absolute;
 	display: flex;
 	align-items: center;
@@ -197,29 +194,29 @@ background: linear-gradient(to right, #18a18d, #097969); /* W3C, IE 10+/ Edge, F
 	transition: transform 0.6s ease-in-out;
 }
 
-.overlay-left {
+.transition-left {
 	transform: translateX(-20%);
 }
 
-.container.right-panel-active .overlay-left {
+.container.right-panel-active .transition-left {
 	transform: translateX(0);
 }
 
-.overlay-right {
+.transition-right {
 	right: 0;
 	transform: translateX(0);
 }
 
-.container.right-panel-active .overlay-right {
+.container.right-panel-active .transition-right {
 	transform: translateX(20%);
 }
 
-.social-container {
+.social-login-container {
 	margin: 20px 0;
 }
 
 
-.social-container a {
+.social-login-container a {
 	border: 1px solid #DDDDDD;
 	border-radius: 50%;
 	display: inline-flex;
@@ -231,4 +228,13 @@ background: linear-gradient(to right, #18a18d, #097969); /* W3C, IE 10+/ Edge, F
     font-family: 'Otomanopee One', sans-serif;;
 }
 
-
+.check {
+	width: 100%;
+	white-space: nowrap;
+	display: inline-block;
+	overflow: hidden;
+  }
+  .check>li {
+	display: inline-block;
+	white-space: nowrap;
+  }
